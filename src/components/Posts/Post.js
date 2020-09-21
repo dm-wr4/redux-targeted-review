@@ -7,7 +7,7 @@ const Posts = (props) => {
   const classNames = useClassNames(false)
   return (
     <div className={classNames.posts.post}>
-      <img src={image_url} />
+      <img src={image_url} alt={title} />
       <div className={classNames.posts.postText}>
         <p className={classNames.posts.postTitle}>{title}</p>
         <p className="post-body">{body}</p>

@@ -1,0 +1,25 @@
+.posts-container {
+  width: 60%;
+  height: 100%;
+  background-color: rgba(78, 179, 179, 0.605);
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.post {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 5px;
+  display: flex;
+}
+
+.post-text {
+  padding-left: 5px;
+}
+
+.post-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 5px;
+}

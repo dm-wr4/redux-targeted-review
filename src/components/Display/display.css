@@ -2,13 +2,7 @@
   width: 100vw;
   height: 92vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: rgba(169, 169, 169, 0.495);
-}
-
-.posts-container {
-  width: 60%;
-  height: 100%;
-  background-color: rgba(78, 179, 179, 0.605);
-  padding: 15px;
 }

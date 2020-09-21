@@ -1,0 +1,22 @@
+.header {
+  width: 100vw;
+  height: 8vh;
+  background-color: rgba(60, 179, 114, 0.557);
+  position: relative;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle {
+  position: absolute;
+  height: 2vh;
+  top: calc(50% - 1vh);
+  right: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.login-form {
+  padding: 10px;
+}

@@ -2,9 +2,18 @@
   width: 60%;
   height: 8vh;
   background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 5px;
 }
 
 .user-dark {
   background-color: rgb(40, 40, 40);
   color: white;
+}
+
+.user-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }

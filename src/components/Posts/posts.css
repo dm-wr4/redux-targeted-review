@@ -14,8 +14,16 @@
   display: flex;
 }
 
+.post-dark {
+  background-color: rgb(40, 40, 40);
+}
+
 .post-text {
   padding-left: 5px;
+}
+
+.post-text-dark {
+  color: white;
 }
 
 .post-title {

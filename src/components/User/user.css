@@ -3,3 +3,8 @@
   height: 8vh;
   background-color: #fff;
 }
+
+.user-dark {
+  background-color: rgb(40, 40, 40);
+  color: white;
+}

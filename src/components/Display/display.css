@@ -6,3 +6,7 @@
   align-items: center;
   background-color: rgba(169, 169, 169, 0.495);
 }
+
+.display-dark {
+  background-color: rgb(31, 28, 28);
+}

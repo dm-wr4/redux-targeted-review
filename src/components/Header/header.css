@@ -8,6 +8,11 @@
   align-items: center;
 }
 
+.header-dark {
+  background-color: black;
+  color: white;
+}
+
 .toggle {
   position: absolute;
   height: 2vh;
@@ -19,4 +24,26 @@
 
 .login-form {
   padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.input-dark {
+  background-color: dimgray;
+  color: white;
+}
+
+.input-dark::placeholder {
+  color: white;
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.button-dark {
+  background-color: dimgrey;
+  color: white;
 }

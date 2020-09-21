@@ -1,10 +1,12 @@
 import React from 'react'
 import useClassNames from '../../hooks/useClassNames'
+import { useSelector } from 'react-redux'
 import './posts.css'
 
 const Posts = (props) => {
   const { title, body, image_url } = props.post
-  const classNames = useClassNames(false)
+  const isDarkMode = useSelector((reduxState) => reduxState.theme.isDarkMode)
+  const classNames = useClassNames(isDarkMode)
   return (
     <div className={classNames.posts.post}>
       <img src={image_url} alt={title} />

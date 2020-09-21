@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Toggle from 'react-toggle'
 import useClassNames from '../../hooks/useClassNames'
+import { connect } from 'react-redux'
+import { toggleDarkMode } from '../../ducks/themeReducer'
 import './header.css'
 import 'react-toggle/style.css'
 
@@ -12,7 +14,7 @@ const Header = (props) => {
   const [name, setName] = useState('')
   const [image, setImage] = useState('')
 
-  const classNames = useClassNames(false)
+  const classNames = useClassNames(props.isDarkMode)
 
   const handleLogin = (e) => {
     e.preventDefault()
@@ -22,7 +24,10 @@ const Header = (props) => {
     <div className={classNames.header.header}>
       <h1>FaceTweet</h1>
       <label className="toggle" htmlFor="dark-mode-toggle">
-        <Toggle id="dark-mode-toggle" />
+        <Toggle
+          onChange={(e) => props.toggleDarkMode(e.target.checked)}
+          id="dark-mode-toggle"
+        />
         <span>Dark mode</span>
       </label>
       <form onSubmit={handleLogin} className="login-form">
@@ -46,4 +51,7 @@ const Header = (props) => {
     </div>
   )
 }
-export default Header
+
+const mapStateToProps = (reduxState) => reduxState.theme
+
+export default connect(mapStateToProps, { toggleDarkMode })(Header)

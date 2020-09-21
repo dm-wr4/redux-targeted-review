@@ -2,10 +2,11 @@ import React from 'react'
 import User from '../User/User'
 import PostsContainer from '../Posts/PostsContainer'
 import useClassNames from '../../hooks/useClassNames'
+import { connect } from 'react-redux'
 import './display.css'
 
 const Display = (props) => {
-  const classNames = useClassNames(false)
+  const classNames = useClassNames(props.isDarkMode)
 
   return (
     <div className={classNames.display.display}>
@@ -15,4 +16,7 @@ const Display = (props) => {
     </div>
   )
 }
-export default Display
+
+const mapStateToProps = (reduxState) => reduxState.theme
+
+export default connect(mapStateToProps)(Display)
